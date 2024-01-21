@@ -7,8 +7,60 @@
 
 .container{
     width: 100%;
-    height: 100hv;
-    background:linear-gradient(135deg,#153677,#4e085f);
+    height: 100vh;
+    background: linear-gradient(135deg,#153677,#4e085f);
     padding: 10px;
 
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo-app h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+
+}
+
+.todo-app h2 img{
+    width: 30px;
+    margin-left: 5px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 50px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 15px;
+}
+
+button{
+    border:none;
+    outline: none;
+    padding: 20px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 30px;
+    
 }
