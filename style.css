@@ -49,6 +49,7 @@
 input{
     flex: 1;
     border: none;
+    outline: none;
     background: transparent;
     padding: 10px;
     font-weight: 15px;
@@ -56,6 +57,7 @@ input{
 
 button{
     border:none;
+    width: 130px;
     outline: none;
     padding: 20px;
     background: #ff5945;
@@ -63,4 +65,38 @@ button{
     font-size: 16px;
     border-radius: 30px;
     
+}
+
+ul li{
+    list-style: none;
+    font-size: 18px;
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(icons8-unchecked-checkbox-50.png);
+    background-size: cover;
+    /* background-size: 20px; */
+    background-position: center;
+    top: 12px;
+    left: 8px;
+
+}
+
+ul li.checked{
+    text-decoration: line-through;
+    color: #555;
+}
+
+ul li.checked::before{
+    background-image: url(icons8-unchecked-checkbox-24.png);
 }
