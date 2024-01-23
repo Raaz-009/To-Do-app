@@ -100,3 +100,28 @@ ul li.checked{
 ul li.checked::before{
     background-image: url(icons8-unchecked-checkbox-24.png);
 }
+
+ul li span{
+    position: absolute;
+    height: 40px;
+    font-size: 32px;
+    top: 5px;
+    width: 40px;
+    color: #555;
+    line-height: 37px;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 300px;
+}
+
+ul li span:hover{
+    background-color: #d0aeae;
+}
+
+.remove-button {
+    background-color: #ff6961; /* Red color for the remove button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
